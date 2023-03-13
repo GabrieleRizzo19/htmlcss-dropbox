@@ -40,3 +40,15 @@
 #number-of-use > div{
     margin-top: 50px;
 }
+
+.designit-column{
+    width: calc( 100% / 3);
+    border: 3px solid black;
+}
+
+.square{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    border: 3px solid black;
+}

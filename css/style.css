@@ -4,3 +4,19 @@
     padding: 0;
     margin: 0;
 }
+
+#jumbotron{
+    padding: 20px;
+}
+
+#plans{
+    margin-top: 50px;
+}
+
+.plan-column{
+
+}
+
+.row-plan{
+    margin-top: 50px;
+}

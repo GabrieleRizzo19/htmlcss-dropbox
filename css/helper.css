@@ -1,9 +1,31 @@
+.min-height50{ min-height: 50px; }
 .min-height70{ min-height: 70px; }
+.min-height150{ min-height: 150px; }
+.min-height200{ min-height: 200px; }
+.min-height600{ min-height: 600px; }
+.min-height750{ min-height: 750px; }
+.min-height1200{ min-height: 1200px; }
 .min-width400{ min-width: 400px; }
+
+.max-width1000{ max-width: 1000px; }
+
+.width65vw{ width: 65vw; }
+.width50vw{ width: 50vw; }
 
 .bg-red{ background-color: red; }
 .bg-blue{ background-color: blue; }
+.bg-green{ background-color: green; }
+.bg-orange{ background-color: orange; }
+.bg-violet{ background-color: violet; }
+.bg-cyan{ background-color: cyan; }
+.bg-black{ background-color: black; }
+.bg-yellow{ background-color: yellow; }
+
+
+.margin-zero-auto{ margin: 0 auto; }
 
 
 .flex{ display: flex; }
 .justify-content-sb{ justify-content: space-between; }
+.col30{ width: 30%; }
+.col70{ width: 70%; }

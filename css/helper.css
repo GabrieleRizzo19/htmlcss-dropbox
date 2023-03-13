@@ -31,6 +31,8 @@
 
 .flex{ display: flex; }
 .justify-content-sb{ justify-content: space-between; }
+.flex-wrap{ flex-wrap: wrap; }
+
 .col30{ width: 30%; }
 .col40{ width: 40%; }
 .col60{ width: 60%; }

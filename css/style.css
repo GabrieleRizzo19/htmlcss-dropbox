@@ -32,3 +32,11 @@
 .operations-container > div{
     margin-top: 25px;
 }
+
+#number-of-use{
+    padding-top: 150px;
+}
+
+#number-of-use > div{
+    margin-top: 50px;
+}

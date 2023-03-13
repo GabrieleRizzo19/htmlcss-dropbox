@@ -1,0 +1,9 @@
+.min-height70{ min-height: 70px; }
+.min-width400{ min-width: 400px; }
+
+.bg-red{ background-color: red; }
+.bg-blue{ background-color: blue; }
+
+
+.flex{ display: flex; }
+.justify-content-sb{ justify-content: space-between; }

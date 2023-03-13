@@ -60,3 +60,8 @@
 #faq-container{
     margin-top: 50px;
 }
+
+.footer-column{
+    width: calc( 100% / 5 - 50px);
+    background-color: red;
+}

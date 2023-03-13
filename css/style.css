@@ -6,11 +6,11 @@
 }
 
 #jumbotron{
-    padding: 20px;
+    padding-top: 80px;
 }
 
 #plans{
-    margin-top: 50px;
+    padding-top: 100px;
 }
 
 .plan-column{

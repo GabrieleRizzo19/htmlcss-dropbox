@@ -67,6 +67,8 @@ nav button:hover{
 
 #jumbotron{
     margin-top: 70px;
+    position: relative;
+    top: 80px;
 }
 
 #jumbotron h1{
@@ -75,7 +77,11 @@ nav button:hover{
 }
 
 #jumbotron .col40{
-    padding: 2em 0.5em 0 0.5em;   
+    padding: 1.5em 0.5em 0 0.5em;   
+}
+
+#jumbotron .col60{
+    padding-top: 1.5em;
 }
 
 #jumbotron button{
@@ -83,6 +89,18 @@ nav button:hover{
     padding: 0.5em 1em;
     border: none;
     color: white;
+}
+
+#jumbotron button:hover{
+    cursor: pointer;
+}
+
+#jumbotron a{
+    color: black;
+}
+
+#jumbotron a:last-child{
+    font-size: 3em;
 }
 
 #jumbotron img{
@@ -93,11 +111,20 @@ nav button:hover{
 
 
 #plans{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 #plans #billing-selection{
+    font-size: 14px;
     padding: 2em 0;
+}
+
+#billing-selection label{
+    margin-right: 2em;
+}
+
+#billing-selection *:hover{
+    cursor: pointer;
 }
 
 #plans h2{
@@ -108,6 +135,7 @@ nav button:hover{
 
 .plan-target{
     padding: 0.5em 0;
+    border-bottom: 1px solid lightgrey;
 }
 
 .plan-details{
@@ -122,6 +150,10 @@ nav button:hover{
 
 #plan-cost{
     margin-bottom: 2em;
+}
+
+#plan-cost small{
+    color: grey;
 }
 
 .plan-details small{
@@ -155,6 +187,23 @@ nav button:hover{
 
 .row-plan{
     margin-top: 50px;
+}
+
+.row-plan p{
+    margin: 1eem;
+
+}
+
+.row-plan button{
+    font-size: 14px;
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.row-plan button:hover{
+    cursor: pointer;
 }
 
 /****** PARTNER SECTION  ******/

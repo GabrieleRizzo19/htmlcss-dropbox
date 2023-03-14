@@ -38,15 +38,15 @@
         <main>
             <!-- JUMBOTRON -->
             <div class="bg-lightblue-dropbox">
-                <section class="bg-green max-width1000 margin-zero-auto" id="jumbotron">
+                <section class="max-width1000 margin-zero-auto" id="jumbotron">
                         
                     <h1>
                         Tutto ciò che ti serve per il
                         lavoro, in un unico posto
                     </h1>
 
-                    <div class="flex column-container min-height400">
-                        <div class="col40 bg-red">  
+                    <div class="flex column-container">
+                        <div class="col40">  
                             <p>
                                 Finalmente tutti i tuoi strumenti, contenuti e
                                 collaboratori sono accessibili dallo stesso posto.
@@ -65,7 +65,7 @@
                             <a href="#footer"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
         
-                        <div class="col60 bg-blue">
+                        <div class="col60">
                             <img src="./img/jumbo.png" alt="img jumbotron">
                         </div>
                     </div>
@@ -76,13 +76,13 @@
             
             
             <!-- PLAN SECTION -->
-            <section class="width50vw min-height1200 margin-zero-auto bg-cyan" id="plans">
+            <section class="width50vw min-height1200 margin-zero-auto" id="plans">
 
                 <h2>
                     Trova il piano business che fa per te
                 </h2>
 
-                <div class="min-height50 bg-violet" id="billing-selection">
+                <div id="billing-selection">
                     <input type="radio" name="billing" id="monthly">
                     <label for="monthly"> Fatturazione mensile</label>
                     <input type="radio" name="billing" id="annual">
@@ -93,13 +93,13 @@
 
                     <div class="flex flex-direction-row justify-content-sb column-plan-container">
 
-                        <div class="col30 bg-yellow column-plan min-height500">
-                            <div class="plan-target text-align-center border-black-1px-solid">
+                        <div class="col30 column-plan min-height800 border-lightgrey-1px-solid">
+                            <div class="plan-target text-align-center">
                                 <i class="fa-solid fa-user"></i>
                                 <span>Singolo</span>
                             </div>
 
-                            <div class="plan-details border-black-1px-solid">
+                            <div class="plan-details">
 
                                 <h3>Professional</h3>
                                 <div id="plan-cost">
@@ -107,25 +107,27 @@
                                     <small>/mese</small>
                                 </div>
 
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        1 utente
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        5TB di spazio di archiviazione sicuro
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        Funzioni di produttività premium
-                                        e condivisione file semplice e
-                                        sicura
-                                    </li>
-                                </ul>
+                                <div class="min-height200">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-user"></i>
+                                            1 utente
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i>
+                                            5TB di spazio di archiviazione sicuro
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            Funzioni di produttività premium
+                                            e condivisione file semplice e
+                                            sicura
+                                        </li>
+                                    </ul>
+                                </div>
 
                                 <div id="plan-start">
-                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -146,39 +148,39 @@
                                 
                         </div> 
                         
-                        <div class="col30 bg-yellow column-plan min-height500">
-                            <div class="plan-target text-align-center border-black-1px-solid">
+                        <div class="col30 column-plan min-height800 border-lightgrey-1px-solid">
+                            <div class="plan-target text-align-center">
                                 <i class="fa-solid fa-people-group"></i>
                                 <span>Team</span>
                             </div>
 
-                            <div class="plan-details border-black-1px-solid">
+                            <div class="plan-details">
 
                                 <h3>Advanced</h3>
                                 <div id="plan-cost">
-                                    <strong>12.00€</strong>
-                                    <small>/mese</small>
+                                    <strong>18.00€</strong>
+                                    <small>/utente/mese</small>
                                 </div>
 
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        1 utente
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        5TB di spazio di archiviazione sicuro
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        Funzioni di produttività premium
-                                        e condivisione file semplice e
-                                        sicura
-                                    </li>
-                                </ul>
-
+                                <div class="min-height200">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-people-group"></i>
+                                            3 o più utenti
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i>
+                                            Tutto lo spazio di cui ha bisogno il tuo team
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
+                                        </li>
+                                    </ul>
+                                </div>
+                                
                                 <div id="plan-start">
-                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -188,24 +190,36 @@
                                 <ul>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Invia file fino a 100GB con DropboxTransfert
+                                        Nessun limite di spazio per i file
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
                                         Cartelle offline su dispositivi mobili
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Risparmio del 50% rispetto alle iscrizioni singole
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Possibilità di inserire nuovi membri del team
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Gestione dei permessi in base ai ruoli
                                     </li>
                                 </ul>
                             </div>
                                 
                         </div> 
 
-                        <div class="col30 bg-yellow column-plan min-height500">
-                            <div class="plan-target text-align-center border-black-1px-solid">
+                        <div class="col30 column-plan min-height800 border-lightgrey-1px-solid">
+                            <div class="plan-target text-align-center">
                                 <i class="fa-solid fa-building"></i>
                                 <span>Azienda</span>
                             </div>
 
-                            <div class="plan-details border-black-1px-solid">
+                            <div class="plan-details">
 
                                 <h3>Enterprise</h3>
                                 <div id="plan-cost">
@@ -213,25 +227,27 @@
                                     <small>/mese</small>
                                 </div>
 
-                                <ul>
-                                    <li>
-                                        <i class="fa-solid fa-user"></i>
-                                        1 utente
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-folder"></i>
-                                        5TB di spazio di archiviazione sicuro
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        Funzioni di produttività premium
-                                        e condivisione file semplice e
-                                        sicura
-                                    </li>
-                                </ul>
-
+                                <div class="min-height200">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-user"></i>
+                                            1 utente
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i>
+                                            5TB di spazio di archiviazione sicuro
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                            Funzioni di produttività premium
+                                            e condivisione file semplice e
+                                            sicura
+                                        </li>
+                                    </ul>
+                                </div>
+                                
                                 <div id="plan-start">
-                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -241,11 +257,15 @@
                                 <ul>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Invia file fino a 100GB con DropboxTransfert
+                                        Cartelle offline su dispositivi mobili
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Cartelle offline su dispositivi mobili
+                                        Servizio assistenza 24/h
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Possibilità di personlizzazione totale
                                     </li>
                                 </ul>
                             </div>
@@ -254,8 +274,29 @@
         
                     </div>
 
-                    <div class="min-height200 bg-red row-plan">
+                    <div class="row-plan">
+                        
+                        <div class="plan-target text-align-center border-lightgrey-1px-solid">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Team</span>
+                        </div>
 
+                        <div class="flex border-lightgrey-1px-solid">
+                            <div class="col70 plan-details ">
+                                <h3>Enterprise</h3>
+                                <strong>Contatta l'ufficio vendite per i prezzi</strong>
+    
+                                <p>
+                                    Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
+                                    qualsiasi scala.
+                                </p>
+                            </div>
+                            <div class="col30 plan-details">
+                                <button class="bg-blue-button-dropbox">Contatta l'ufficio vendite</button>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
 
                 </div>

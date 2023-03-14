@@ -14,7 +14,9 @@
 .min-height1200{ min-height: 1200px; }
 .min-width400{ min-width: 400px; }
 
+.max-width800{ max-width: 800px; }
 .max-width1000{ max-width: 1000px; }
+
 
 .width100perc{ width: 100%; }
 .width65vw{ width: 65vw; }
@@ -32,6 +34,14 @@
 .bg-black{ background-color: black; }
 .bg-yellow{ background-color: yellow; }
 .bg-grey{ background-color: grey; }
+.bg-green-designit{ background-color: #a2d39b; }
+.bg-red-arizona{ background-color: #61082b; }
+.bg-blue-florida{ background-color: #0093ce; }
+.bg-red-topps{ background-color: #ff1c1c; }
+.bg-red-bicycle{ background-color: #d5001f; }
+.bg-skyblue-hearst{ background-color: #b4d0e7; }
+.bg-blue-lonely{ background-color: #0d2481; }
+.bg-yellow-clear{ background-color: #ffd830; }
 
 
 .margin-zero-auto{ margin: 0 auto; }

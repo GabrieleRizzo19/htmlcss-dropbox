@@ -16,6 +16,7 @@ header{
     top: 0;
     left: 0;
     z-index: 10;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
 }
 
 #header-logo:hover{
@@ -164,6 +165,10 @@ nav button:hover{
     margin-bottom: 1em;
 }
 
+.fa-check{
+    color: blue;
+}
+
 #plan-trial{
     width: 100%;
     padding: 1em;
@@ -208,8 +213,21 @@ nav button:hover{
 
 /****** PARTNER SECTION  ******/
 
+#partner{
+    margin-top: 50px;
+}
+
 #partner img{
     width: 100%;
+}
+
+#partner .col40{
+    padding: 1.5em;
+}
+
+#partner button{
+    padding: 1em;
+    margin-top: 1em;
 }
 
 /****** OPERATIONS SECTION  ******/
@@ -230,14 +248,23 @@ nav button:hover{
     margin-top: 25px;
 }
 
+.operation-text{
+    padding: 0.5em;
+}
+
 /****** NUMBER OF USE SECTION  ******/
 
 #number-of-use{
-    padding-top: 150px;
+    padding: 10em 0 7em 0;
 }
 
-#number-of-use > a{
+#number-of-use > div{
     margin-top: 50px;
+}
+
+#number-of-use > div > a{
+    text-decoration: underline;
+    color: blue;
 }
 
 /****** DESIGNIT SECTION  ******/
@@ -245,18 +272,22 @@ nav button:hover{
 .designit-column{
     width: calc( 100% / 3 );
     height: calc( 100vw / 3 );
-    border: 3px solid black;
 }
 
 #designit-column-text{
     padding: 2em;
+    background-color: #f5f5f5;
+}
+
+#designit-column-text hr{
+    margin: 2em 0;
+    width: 20%;
+    border: 1px solid lightgrey;
 }
 
 .square{
     width: 50%;
     height: 50%;
-    background-color: yellow;
-    border: 3px solid black;
 }
 
 .square img{
@@ -265,6 +296,13 @@ nav button:hover{
 
 .designit-column img{
     width: 50%;
+}
+
+/****** TRIAL SECTION  ******/
+
+#trial button{
+    padding: 1em 3em;
+    border: none;
 }
 
 /****** FAQ SECTION  ******/

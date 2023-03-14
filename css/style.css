@@ -10,22 +10,42 @@
 
 /****** HEADER  ******/
 
-/* header{
+header{
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-} */
-
-nav{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    z-index: 10;
 }
 
-#left-header, #right-header{
-    padding: 0.5em;
+#header-logo:hover{
+    cursor: pointer;
+}
+
+nav{
+    padding: 1em 0.5em;
+}
+
+nav a{
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+nav button{
+    font-size: 16px;
+    padding: 0.5em 1em;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+nav button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #left-header *{
@@ -37,28 +57,40 @@ nav{
 }
 
 #start-button{
-    margin-right: 0;
+    margin-right: 0.5em;
 }
 
 /****** MAIN  ******/
+
+/****** JUMBOTRON  ******/
+
 
 #jumbotron{
     margin-top: 70px;
 }
 
 #jumbotron h1{
-    font-size: 2em;
+    font-size: 4em;
     font-weight: 800;
 }
 
 #jumbotron .col40{
-    padding: 2em 0.5em 0 0.5em;
-    
+    padding: 2em 0.5em 0 0.5em;   
+}
+
+#jumbotron button{
+    font-size: 16px;
+    padding: 0.5em 1em;
+    border: none;
+    color: white;
 }
 
 #jumbotron img{
     width: 130%;
 }
+
+/****** PLAN SECTION  ******/
+
 
 #plans{
     padding-top: 100px;
@@ -74,27 +106,64 @@ nav{
     margin-bottom: 1em;
 }
 
-
-
-.plan-column{
-
-}
-
 .plan-target{
     padding: 0.5em 0;
 }
 
 .plan-details{
-    padding-left: 1.5em;
+    padding: 1.5em;
+    font-size: 14px;
 }
+
+.plan-details h3{
+    font-size: 18px;
+    margin: 1em 0;
+}
+
+#plan-cost{
+    margin-bottom: 2em;
+}
+
+.plan-details small{
+    display: block;
+}
+
+.plan-details li{
+    margin-bottom: 1em;
+}
+
+#plan-trial{
+    width: 100%;
+    padding: 1em;
+    background: blue;
+    color: white;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.plan-details hr{
+    width: 33%;
+    margin: 2em 0;
+    color: grey;
+}
+
+
+.plan-details h4{
+    margin-bottom: 1em;
+}
+
 
 .row-plan{
     margin-top: 50px;
 }
 
+/****** PARTNER SECTION  ******/
+
 #partner img{
     width: 100%;
 }
+
+/****** OPERATIONS SECTION  ******/
 
 #operations{
     padding-top: 100px;
@@ -112,6 +181,8 @@ nav{
     margin-top: 25px;
 }
 
+/****** NUMBER OF USE SECTION  ******/
+
 #number-of-use{
     padding-top: 150px;
 }
@@ -119,6 +190,8 @@ nav{
 #number-of-use > a{
     margin-top: 50px;
 }
+
+/****** DESIGNIT SECTION  ******/
 
 .designit-column{
     width: calc( 100% / 3 );
@@ -145,7 +218,7 @@ nav{
     width: 50%;
 }
 
-
+/****** FAQ SECTION  ******/
 
 #faq{
     padding: 120px 0;
@@ -168,12 +241,10 @@ nav{
     margin-right: 2em;
 }
 
+/****** FOOTER  ******/
+
 .footer-column{
     width: calc( 100% / 5 - 30px);
     background-color: red;
     padding-left: 0.5em;
-}
-
-footer li{
-    list-style-type: none;
 }

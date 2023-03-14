@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <title>Dropbox</title>
     </head>
 
@@ -18,27 +18,27 @@
 
         <header>
             <!-- HEADER NAVBAR -->
-            <nav class="min-height70 flex justify-content-sb bg-white">
-                <div class="flex justify-content-sb align-items-center bg-yellow min-height70 min-width400" id="left-header">
-                    <img src="./img/logo-small.png" alt="logo">
+            <nav class="flex justify-content-sb align-items-center bg-white">
+                <div class="flex justify-content-sb align-items-center" id="left-header">
+                    <img src="./img/logo-small.png" alt="logo" id="header-logo">
                     <a href="#">Perché Dropbox</a>
                     <a href="#">Funzioni</a>
                     <a href="#">Prezzi</a>
                 </div>
 
-                <div class="flex justify-content-sb align-items-center bg-red min-height70 min-width400" id="right-header">
+                <div class="flex justify-content-sb align-items-center" id="right-header">
                     <a href="#">Supporto</a>
                     <a href="#">Contatta l'ufficio vendite</a>
                     <a href="#">Accedi</a>
-                    <a id="start-button" href="#">Inizia</a>
+                    <button class="bg-blue-button-dropbox">Inizia</button>
                 </div>
             </nav>
         </header>
 
         <main>
             <!-- JUMBOTRON -->
-            <div class="min-height500 bg-black">
-                <section class="bg-green width65vw min-height500 margin-zero-auto" id="jumbotron">
+            <div class="bg-lightblue-dropbox">
+                <section class="bg-green max-width1000 margin-zero-auto" id="jumbotron">
                         
                     <h1>
                         Tutto ciò che ti serve per il
@@ -56,7 +56,7 @@
                                 esistente.
                             </p>
                             <br><br>
-                            <a href="#">Inizia la tua prova gratuita</a>
+                            <button class="bg-blue-button-dropbox">Inizia la tua prova gratuita</button>
 
                             <br><br>
                             <a href="#">Annulla in qualsiasi momento</a>
@@ -93,65 +93,164 @@
 
                     <div class="flex flex-direction-row justify-content-sb column-plan-container">
 
-                        <div class="col30 bg-yellow column-plan">
+                        <div class="col30 bg-yellow column-plan min-height500">
                             <div class="plan-target text-align-center border-black-1px-solid">
                                 <i class="fa-solid fa-user"></i>
                                 <span>Singolo</span>
                             </div>
 
-                            <div class="flex flex-direction-column plan-details border-black-1px-solid">
+                            <div class="plan-details border-black-1px-solid">
 
                                 <h3>Professional</h3>
-                                <span>12.00€</span>
-                                <span>/mese</span>
+                                <div id="plan-cost">
+                                    <strong>12.00€</strong>
+                                    <small>/mese</small>
+                                </div>
 
-                                <span>
-                                    <i class="fa-solid fa-user"></i>
-                                    1 utente
-                                </span>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-user"></i>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder"></i>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Funzioni di produttività premium
+                                        e condivisione file semplice e
+                                        sicura
+                                    </li>
+                                </ul>
 
-                                <span>
-                                    <i class="fa-solid fa-user"></i>
-                                    5TB di spazio di archiviazione sicuro
-                                </span>
-                                
-                                <span>
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                    Funzioni di produttività premium
-                                    e condivisione file semplice e
-                                    sicura
-                                </span>
-
-                                <span>
-                                    <a href="#">Prova gratis per 30 giorni</a>
-                                </span>
-
-                                <span>
-                                    Oppure <a href="#">acquista ora</a>
-                                </span>
+                                <div id="plan-start">
+                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
+                                </div>
 
                                 <hr>
 
                                 <h4>Punti salienti del piano</h4>
-
-                                <span>
-                                    <i class="fa-solid fa-check"></i>
-                                    Invia file fino a 100GB con Dropbox Transfert
-                                </span>
-
-                                <span>
-                                    <i class="fa-solid fa-check"></i>
-                                    Cartelle offline su dispositivi mobili
-                                </span>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Invia file fino a 100GB con DropboxTransfert
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                            </div>
+                                
                         </div> 
                         
-                        <div class="col30 bg-green column-plan">
-                            
-                        </div>
-                        
-                        <div class="col30 bg-yellow column-plan">
-                            
-                        </div>
+                        <div class="col30 bg-yellow column-plan min-height500">
+                            <div class="plan-target text-align-center border-black-1px-solid">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Team</span>
+                            </div>
+
+                            <div class="plan-details border-black-1px-solid">
+
+                                <h3>Advanced</h3>
+                                <div id="plan-cost">
+                                    <strong>12.00€</strong>
+                                    <small>/mese</small>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-user"></i>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder"></i>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Funzioni di produttività premium
+                                        e condivisione file semplice e
+                                        sicura
+                                    </li>
+                                </ul>
+
+                                <div id="plan-start">
+                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
+                                </div>
+
+                                <hr>
+
+                                <h4>Punti salienti del piano</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Invia file fino a 100GB con DropboxTransfert
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                            </div>
+                                
+                        </div> 
+
+                        <div class="col30 bg-yellow column-plan min-height500">
+                            <div class="plan-target text-align-center border-black-1px-solid">
+                                <i class="fa-solid fa-building"></i>
+                                <span>Azienda</span>
+                            </div>
+
+                            <div class="plan-details border-black-1px-solid">
+
+                                <h3>Enterprise</h3>
+                                <div id="plan-cost">
+                                    <strong>12.00€</strong>
+                                    <small>/mese</small>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-user"></i>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-folder"></i>
+                                        5TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Funzioni di produttività premium
+                                        e condivisione file semplice e
+                                        sicura
+                                    </li>
+                                </ul>
+
+                                <div id="plan-start">
+                                    <input id="plan-trial" type="submit" value="Prova gratis per 30 giorni">
+                                    <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
+                                </div>
+
+                                <hr>
+
+                                <h4>Punti salienti del piano</h4>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Invia file fino a 100GB con DropboxTransfert
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                            </div>
+                                
+                        </div> 
         
                     </div>
 

@@ -19,6 +19,8 @@
 .width65vw{ width: 65vw; }
 .width50vw{ width: 50vw; }
 
+.bg-lightblue-dropbox{ background-color: #b4d0e7;}
+.bg-blue-button-dropbox{ background-color: #0061ff; }
 .bg-white{ background-color: white; }
 .bg-red{ background-color: red; }
 .bg-blue{ background-color: blue; }
@@ -62,4 +64,8 @@
 
 a{
     text-decoration: none;
+}
+
+li{
+    list-style-type: none;
 }

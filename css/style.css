@@ -151,11 +151,29 @@ nav{
     padding: 120px 0;
 }
 
+#faq h2{
+    font-size: 2.5em;
+}
+
 #faq-container{
     margin-top: 50px;
 }
 
+#faq-container div{
+    padding: 1.5em;
+    font-size: 16px;
+}
+
+#faq-container h3{
+    margin-right: 2em;
+}
+
 .footer-column{
-    width: calc( 100% / 5 - 50px);
+    width: calc( 100% / 5 - 30px);
     background-color: red;
+    padding-left: 0.5em;
+}
+
+footer li{
+    list-style-type: none;
 }

@@ -3,26 +3,105 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
+
+
+/****** HEADER  ******/
+
+/* header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#left-header, #right-header{
+    padding: 0.5em;
+}
+
+#left-header *{
+    margin-right: 2em;
+}
+
+#right-header *{
+    margin-right: 2em;
+}
+
+#start-button{
+    margin-right: 0;
+}
+
+/****** MAIN  ******/
+
 #jumbotron{
-    padding-top: 80px;
+    margin-top: 70px;
+}
+
+#jumbotron h1{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#jumbotron .col40{
+    padding: 2em 0.5em 0 0.5em;
+    
+}
+
+#jumbotron img{
+    width: 130%;
 }
 
 #plans{
     padding-top: 100px;
 }
 
+#plans #billing-selection{
+    padding: 2em 0;
+}
+
+#plans h2{
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+
+
 .plan-column{
 
+}
+
+.plan-target{
+    padding: 0.5em 0;
+}
+
+.plan-details{
+    padding-left: 1.5em;
 }
 
 .row-plan{
     margin-top: 50px;
 }
 
+#partner img{
+    width: 100%;
+}
+
 #operations{
     padding-top: 100px;
+}
+
+#operations img{
+    width: 100%;
 }
 
 .operations-container{
@@ -37,13 +116,18 @@
     padding-top: 150px;
 }
 
-#number-of-use > div{
+#number-of-use > a{
     margin-top: 50px;
 }
 
 .designit-column{
-    width: calc( 100% / 3);
+    width: calc( 100% / 3 );
+    height: calc( 100vw / 3 );
     border: 3px solid black;
+}
+
+#designit-column-text{
+    padding: 2em;
 }
 
 .square{
@@ -52,6 +136,16 @@
     background-color: yellow;
     border: 3px solid black;
 }
+
+.square img{
+    width: 50%;
+}
+
+.designit-column img{
+    width: 50%;
+}
+
+
 
 #faq{
     padding: 120px 0;

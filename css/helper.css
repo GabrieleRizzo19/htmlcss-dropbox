@@ -19,6 +19,7 @@
 .width65vw{ width: 65vw; }
 .width50vw{ width: 50vw; }
 
+.bg-white{ background-color: white; }
 .bg-red{ background-color: red; }
 .bg-blue{ background-color: blue; }
 .bg-green{ background-color: green; }
@@ -32,13 +33,20 @@
 
 .margin-zero-auto{ margin: 0 auto; }
 
+.text-align-center{ text-align: center; }
 
 .flex{ display: flex; }
+.flex-direction-row{ flex-direction: row; }
+.flex-direction-column{ flex-direction: column; }
 .justify-content-sb{ justify-content: space-between; }
+.justify-content-center{ justify-content: center; }
+.justify-content-fe{ justify-content: flex-end; }
+.align-items-center{ align-items: center; }
 .flex-wrap{ flex-wrap: wrap; }
 
 .col30{ width: 30%; }
 .col40{ width: 40%; }
+.col50{ width: 50%; }
 .col60{ width: 60%; }
 .col70{ width: 70%; }
 
@@ -46,6 +54,12 @@
     overflow-y: scroll;
 }
 
+.border-black-1px-solid{ border: 1px solid black; }
+
 .black-border{
     border: 3px solid black;
+}
+
+a{
+    text-decoration: none;
 }

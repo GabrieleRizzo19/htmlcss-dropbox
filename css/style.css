@@ -8,17 +8,14 @@
 
 /****** GENERIC  ******/
 
-.bg-green-designit{ background-color: #a2d39b; }
-.bg-red-arizona{ background-color: #61082b; }
-.bg-blue-florida{ background-color: #0093ce; }
-.bg-red-topps{ background-color: #ff1c1c; }
-.bg-red-bicycle{ background-color: #d5001f; }
-.bg-skyblue-hearst{ background-color: #b4d0e7; }
-.bg-blue-lonely{ background-color: #0d2481; }
-.bg-yellow-clear{ background-color: #ffd830; }
-.bg-lightblue-dropbox{ background-color: #b4d0e7;}
-.bg-blue-button-dropbox{ background-color: #0061ff; }
+.dropbox-button{
+    transition: 0.2s;
+}
 
+.dropbox-button:hover{
+    cursor: pointer;
+    background-color: #008cff;
+}
 
 /****** HEADER  ******/
 
@@ -41,11 +38,11 @@ nav{
 
 nav a{
     color: black;
-    transition: 0.3s;
 }
 
 nav a:hover{
-    transform: scale(1.2);
+    /* text-decoration: underline; */
+    border-bottom: 2px solid black;
 }
 
 nav button{
@@ -53,13 +50,12 @@ nav button{
     padding: 0.5em 1em;
     color: white;
     border: none;
-    transition: 0.3s;
 }
 
-nav button:hover{
+/* nav button:hover{
     cursor: pointer;
-    transform: scale(1.2);
-}
+    background-color: #008cff;
+} */
 
 #left-header *{
     margin-right: 2em;
@@ -104,22 +100,14 @@ nav button:hover{
     color: white;
 }
 
-#jumbotron button:hover{
-    cursor: pointer;
-}
-
-#jumbotron a{
-    color: black;
-}
-
 #jumbotron-down-arrow i{
     font-size: 3em;
     transition: 0.2s;
+    color: black;
 }
 
 #jumbotron-down-arrow:hover i{
     transform: scale(1.2);
-    /* color: red; */
 }
 
 #jumbotron img{
@@ -196,8 +184,8 @@ nav button:hover{
     margin-bottom: 1em;
 }
 
-.plan-trial:hover{
-    cursor: pointer;
+.plan-buy{
+    text-decoration: underline;
 }
 
 .plan-details hr{
@@ -249,10 +237,13 @@ nav button:hover{
 #partner button{
     padding: 1em;
     margin-top: 1em;
+    transition: 0.2s;
 }
 
 #partner button:hover{
     cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 /****** OPERATIONS SECTION  ******/
@@ -333,6 +324,7 @@ nav button:hover{
 
 #trial button:hover{
     cursor: pointer;
+    border: 2px solid black;
 }
 
 /****** FAQ SECTION  ******/

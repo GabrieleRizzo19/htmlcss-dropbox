@@ -6,6 +6,18 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/****** GENERIC  ******/
+
+.bg-green-designit{ background-color: #a2d39b; }
+.bg-red-arizona{ background-color: #61082b; }
+.bg-blue-florida{ background-color: #0093ce; }
+.bg-red-topps{ background-color: #ff1c1c; }
+.bg-red-bicycle{ background-color: #d5001f; }
+.bg-skyblue-hearst{ background-color: #b4d0e7; }
+.bg-blue-lonely{ background-color: #0d2481; }
+.bg-yellow-clear{ background-color: #ffd830; }
+.bg-lightblue-dropbox{ background-color: #b4d0e7;}
+.bg-blue-button-dropbox{ background-color: #0061ff; }
 
 
 /****** HEADER  ******/
@@ -100,8 +112,14 @@ nav button:hover{
     color: black;
 }
 
-#jumbotron a:last-child{
+#jumbotron-down-arrow i{
     font-size: 3em;
+    transition: 0.2s;
+}
+
+#jumbotron-down-arrow:hover i{
+    transform: scale(1.2);
+    /* color: red; */
 }
 
 #jumbotron img{
@@ -169,13 +187,17 @@ nav button:hover{
     color: blue;
 }
 
-#plan-trial{
+.plan-trial{
     width: 100%;
     padding: 1em;
     background: blue;
     color: white;
     border: none;
     margin-bottom: 1em;
+}
+
+.plan-trial:hover{
+    cursor: pointer;
 }
 
 .plan-details hr{
@@ -188,7 +210,6 @@ nav button:hover{
 .plan-details h4{
     margin-bottom: 1em;
 }
-
 
 .row-plan{
     margin-top: 50px;
@@ -228,6 +249,10 @@ nav button:hover{
 #partner button{
     padding: 1em;
     margin-top: 1em;
+}
+
+#partner button:hover{
+    cursor: pointer;
 }
 
 /****** OPERATIONS SECTION  ******/
@@ -292,6 +317,7 @@ nav button:hover{
 
 .square img{
     width: 50%;
+    filter: invert(1);
 }
 
 .designit-column img{
@@ -303,6 +329,10 @@ nav button:hover{
 #trial button{
     padding: 1em 3em;
     border: none;
+}
+
+#trial button:hover{
+    cursor: pointer;
 }
 
 /****** FAQ SECTION  ******/
@@ -317,21 +347,80 @@ nav button:hover{
 
 #faq-container{
     margin-top: 50px;
+    border-top: 1px solid black;
 }
 
-#faq-container div{
-    padding: 1.5em;
+.faq{
+    padding: 1em 0;
     font-size: 16px;
+    border-bottom: 1px solid black;
 }
 
 #faq-container h3{
     margin-right: 2em;
 }
 
+.answer p{
+    display: none;
+    transition: 0.3s;
+}
+
+.question i{
+    transition: 0.3s;
+}
+
+.question:hover i{
+    transform: rotate(180deg);
+}
+
+
+.question:hover + .answer p{
+    display: block;
+}
+
+
 /****** FOOTER  ******/
+
+#footer{
+    padding-top: 5em;
+}
+
+#footer-link-container{
+    padding-bottom: 5rem;
+}
 
 .footer-column{
     width: calc( 100% / 5 - 30px);
-    background-color: red;
     padding-left: 0.5em;
+    color: white;
+}
+
+.footer-column h3{
+    margin-bottom: 1.5em;
+}
+
+.footer-column ul{
+    gap: 0.75em;
+}
+
+.footer-column li a{
+    color: white;
+}
+
+.footer-column li a:hover{
+    text-decoration: underline;
+}
+
+#footer hr{
+    width: 10%;
+}
+
+#language-section img{
+    height: 1em;
+}
+
+#language-selector{
+    border: none;
+    color: white;
+    background-color: transparent;
 }

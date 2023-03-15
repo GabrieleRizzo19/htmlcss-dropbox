@@ -35,6 +35,7 @@
             </nav>
         </header>
 
+        <!-- MAIN -->
         <main>
             <!-- JUMBOTRON -->
             <div class="bg-lightblue-dropbox">
@@ -62,7 +63,7 @@
                             <a href="#">Annulla in qualsiasi momento</a>
 
                             <br><br>
-                            <a href="#footer"><i class="fa-solid fa-arrow-down"></i></a>
+                            <a id="jumbotron-down-arrow" href="#footer"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
         
                         <div class="col60">
@@ -118,7 +119,7 @@
                                             5TB di spazio di archiviazione sicuro
                                         </li>
                                         <li>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                            <iclass="fa-solid fa-share-nodes"></i>
                                             Funzioni di produttività premium
                                             e condivisione file semplice e
                                             sicura
@@ -127,7 +128,7 @@
                                 </div>
 
                                 <div id="plan-start">
-                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
+                                    <button class="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -180,7 +181,7 @@
                                 </div>
                                 
                                 <div id="plan-start">
-                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
+                                    <button class="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -223,8 +224,8 @@
 
                                 <h3>Enterprise</h3>
                                 <div id="plan-cost">
-                                    <strong>12.00€</strong>
-                                    <small>/mese</small>
+                                    <strong>Contattaci</strong>
+                                    <small>-</small>
                                 </div>
 
                                 <div class="min-height200">
@@ -247,7 +248,7 @@
                                 </div>
                                 
                                 <div id="plan-start">
-                                    <button id="plan-trial">Prova gratis per 30 giorni</button>
+                                    <button class="plan-trial">Prova gratis per 30 giorni</button>
                                     <span id="plan-buy">Oppure <a href="#">acquista ora</a></span> 
                                 </div>
 
@@ -520,90 +521,129 @@
             </section>
 
             <!-- FAQ SECTION -->
-            <section class="max-width800 min-height600 margin-zero-auto bg-red" id="faq">
+            <section class="max-width800 min-height600 margin-zero-auto" id="faq">
 
                 <h2>Domande frequenti</h2>
 
                 <div id="faq-container">
-                    <div class="flex align-items-center min-height100 bg-violet black-border">
-                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
-                        <i class="fa-solid fa-caret-down"></i>
+
+                    <div class="faq">
+                        <div class="question">
+                            <div class="flex align-items-center min-height100 black-border">
+                                <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos expedita quos quisquam quasi corrupti eligendi, in voluptatem 
+                                nobis provident facere inventore quam adipisci atque ducimus maiores autem fugiat ipsam.
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex align-items-center min-height100 bg-violet black-border">
-                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
-                        <i class="fa-solid fa-caret-down"></i>
+                    <div class="faq">
+                        <div class="question">
+                            <div class="flex align-items-center min-height100 black-border">
+                                <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos expedita quos quisquam quasi corrupti eligendi, in voluptatem 
+                                nobis provident facere inventore quam adipisci atque ducimus maiores autem fugiat ipsam.
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex align-items-center min-height100 bg-violet black-border">
-                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
-                        <i class="fa-solid fa-caret-down"></i>
+                    <div class="faq">
+                        <div class="question">
+                            <div class="flex align-items-center min-height100 black-border">
+                                <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h3>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos expedita quos quisquam quasi corrupti eligendi, in voluptatem 
+                                nobis provident facere inventore quam adipisci atque ducimus maiores autem fugiat ipsam.
+                            </p>
+                        </div>
                     </div>
+                    
+                    
+                    
                 </div>
             </section>
         </main>
 
-        <footer class="" id="footer">
-            <div class="flex justify-content-sb width65vw min-height500 bg-cyan margin-zero-auto" id="footer">
-                <div class="footer-column">
-                    <h3>Dropbox</h3>
-                    <ul>
-                        <li>Applicazione Desktop</li>
-                        <li>Perché Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
+        <!-- FOOTER -->
+        <footer class="bg-black">
+            <div class="max-width1000 margin-zero-auto" id="footer">
+                <div class="flex justify-content-sb" id="footer-link-container">
+                    <div class="footer-column">
+                        <h3>Dropbox</h3>
+                        <ul class="flex flex-direction-column">
+                            <li><a href="#">Applicazione Desktop</a></li>
+                            <li><a href="#">Perché Dropbox</a></li>
+                            <li><a href="#">Piani</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Funzioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Prodotti</h3>
+                        <ul class="flex flex-direction-column">
+                            <li><a href="#">Applicazione Desktop</a></li>
+                            <li><a href="#">Perché Dropbox</a></li>
+                            <li><a href="#">Piani</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Funzioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Azienda</h3>
+                        <ul class="flex flex-direction-column">
+                            <li><a href="#">Applicazione Desktop</a></li>
+                            <li><a href="#">Perché Dropbox</a></li>
+                            <li><a href="#">Piani</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Funzioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Supporto</h3>
+                        <ul class="flex flex-direction-column">
+                            <li><a href="#">Applicazione Desktop</a></li>
+                            <li><a href="#">Perché Dropbox</a></li>
+                            <li><a href="#">Piani</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Funzioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Community</h3>
+                        <ul class="flex flex-direction-column">
+                            <li><a href="#">Applicazione Desktop</a></li>
+                            <li><a href="#">Perché Dropbox</a></li>
+                            <li><a href="#">Piani</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Funzioni</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Prodotti</h3>
-                    <ul>
-                        <li>Applicazione Desktop</li>
-                        <li>Perché Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Azienda</h3>
-                    <ul>
-                        <li>Applicazione Desktop</li>
-                        <li>Perché Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Supporto</h3>
-                    <ul>
-                        <li>Applicazione Desktop</li>
-                        <li>Perché Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Community</h3>
-                    <ul>
-                        <li>Applicazione Desktop</li>
-                        <li>Perché Dropbox</li>
-                        <li>Piani</li>
-                        <li>Sicurezza</li>
-                        <li>Funzioni</li>
-                    </ul>
-                </div>
+    
+                <hr>
+    
+                <div class="flex align-items-center min-height100" id="language-section">
+                    <img src="./img/ita.png" alt="italy flag">
+                    <select name="language" id="language-selector">
+                        <option value="italian">Italiano</option>
+                        <option value="english">English</option>
+                        <option value="french">Français</option>
+                    </select>
+                </div>  
             </div>
-
-            <hr>
-
-            <div class="min-height100 bg-blue width65vw margin-zero-auto" id="language-selector">
-                <select name="language" id="language-selector">
-                    <option value="italian">Italiano</option>
-                    <option value="english">English</option>
-                    <option value="french">Français</option>
-                </select>
-            </div>  
+            
         </footer>
 
     </body>
